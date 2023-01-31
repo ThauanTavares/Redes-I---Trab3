@@ -1,0 +1,21 @@
+ Thauan de Souza Tavares da Silva GRR20171591
+ 
+ Objetivo: Programa simula uma transmissão de dados, usando Janelas Deslizantes Volta-N. O receptor se recusa a aceitar qualquer pacote, exceto o próximo na sequência.
+ Se um pacote for perdido em trânsito, os pacotes seguintes serão ignorados 
+ até que o pacote ausente seja retransmitido
+ 	
+Funcionamento: Objetivo simular os dados enviados e recebidos verificando utilizando janelas deslizantes, forma para testar o algoritmo escolhida pelo desenvolvedor foi: 
+	o usuario digita uma mensagem a principio 4 mensagem com tamanho 4, pode entrar no programa como: 
+		>1111
+		>1100
+		>0111
+		>1010
+		
+	Dessa forma para usar a paridade. Feito dessa forma para facilitar o teste do algoritmo, futuramente pode ser alterado para receber uma mensagem inteira e o programa mesmo corrigir. Após a entrada dos dados é impressa a mensagem em formato de matriz e calculada a paridade bidimensional.Então é impressa a mensagem recebida, após passar por uma função que simula uma interferencia(chance de 50% para aumentar ou diminuir alterar o valor de interferencia no funcoes.c) alterando um bit da mensagem. É calculado a paridade da mensagem recebida e verificada se tem alguma existencia de erro, em caso de erro é informado para retransmitir a partir da mensagem que deu erro.
+	
+ 
+ Execução:
+ 	>make
+ 	>./Janelas
+ 	
+
